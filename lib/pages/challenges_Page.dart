@@ -27,7 +27,7 @@ class ChallengePage extends StatelessWidget {
               height: 0,
               width: double.maxFinite,
               axis: Axis.horizontal,
-              dashColor: Color(0xffC6EA7F),
+              dashColor: Color(0xffbfe76a),
             )),
 
       ),

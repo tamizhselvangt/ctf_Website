@@ -22,7 +22,7 @@ class WelcomePage extends StatelessWidget {
               child:
               DottedDashedLine(
                 height: 0, width: double.maxFinite, axis: Axis.horizontal,
-                dashColor: Color(0xffC6EA7F),)),
+                dashColor: Color(0xffbfe76a),)),
         ),
         body: Padding(
           padding: EdgeInsets.all(8.0),
@@ -44,7 +44,7 @@ class WelcomePage extends StatelessWidget {
                             fontFamily: "Monaco",
                             fontWeight: FontWeight.bold,
                             fontSize: 30,
-                            color: Color(0xffC6EA7F),
+                            color: Color(0xffbfe76a),
                           ),
                         ),
                         Text(
@@ -74,7 +74,7 @@ class WelcomePage extends StatelessWidget {
                             fontFamily: "Monaco",
                             fontSize: 40,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xffC6EA7F),
+                            color: Color(0xffbfe76a),
                           ),
                         ),
                         const SizedBox(

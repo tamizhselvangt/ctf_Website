@@ -38,13 +38,13 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white
         )),
         scaffoldBackgroundColor: Color(0xff1d1d1d),
-        primaryColor: Color(0xffC6EA7F),
+        primaryColor: Color(0xffbfe76a),
         primaryTextTheme: const TextTheme(
       displayMedium: TextStyle(
         fontFamily: "Monaco",
         fontSize: 40,
         fontWeight: FontWeight.w400,
-        color: Color(0xffC6EA7F),
+        color: Color(0xffbfe76a),
       ),
         )
       ),

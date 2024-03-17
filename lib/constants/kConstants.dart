@@ -6,7 +6,7 @@ const kTextStyle = TextStyle(
   fontFamily: "Monaco",
   fontSize: 40,
   fontWeight: FontWeight.w400,
-  color: Color(0xffC6EA7F),
+  color: Color(0xffbfe76a),
   //   color: Colors.green
 );
 
@@ -23,19 +23,19 @@ const kChallengeTitleStyle = TextStyle(
     fontFamily: "Monaco",
     fontSize: 20,
     fontWeight: FontWeight.w500,
-    color: Color(0xffC6EA7F)
+    color: Color(0xffbfe76a)
 );
 
 
 const kLargeAppbarStyle = TextStyle(
   fontFamily: "Monaco",
   fontWeight: FontWeight.bold,
-  color: Color(0xffC6EA7F),
+  color: Color(0xffbfe76a),
 );
 const kSamllAppbarStyle = TextStyle(
   fontFamily: "Monaco",
   fontWeight: FontWeight.bold,
-  color: Color(0xffC6EA7F),
+  color: Color(0xffbfe76a),
   fontSize: 17
 );
 
