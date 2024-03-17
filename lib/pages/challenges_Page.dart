@@ -41,31 +41,40 @@ class ChallengePage extends StatelessWidget {
         ),
       ) ,
       //Main Challenges Content
-      body: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints){
-         if(mobile)
-          return Row(
-            children: [
-              SidebarMenu(sideBarController, context),
-              Expanded(
-                  flex: 7,
-                  child: Container(
-                    // color: Color(0xff1d1d1d),
-                    child: Obx(() =>
-                    sideBarController.pages[sideBarController.index.value]),
-                  ))
-            ],
-          );
-         else
-           return Expanded(
-             flex: 7,
-             child: Container(
-               // color: Color(0xff1d1d1d),
-               child: Obx(() =>
-               sideBarController.pages[sideBarController.index.value]),
-             ));
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/background.png",),
+            fit: BoxFit.cover,
 
-        },
+          ),
+        ),
+        child: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints){
+           if(mobile)
+            return Row(
+              children: [
+                SidebarMenu(sideBarController, context),
+                Expanded(
+                    flex: 7,
+                    child: Container(
+                      // color: Color(0xff1d1d1d),
+                      child: Obx(() =>
+                      sideBarController.pages[sideBarController.index.value]),
+                    ))
+              ],
+            );
+           else
+             return Expanded(
+               flex: 7,
+               child: Container(
+                 // color: Color(0xff1d1d1d),
+                 child: Obx(() =>
+                 sideBarController.pages[sideBarController.index.value]),
+               ));
+
+          },
+        ),
       )
     );
   }

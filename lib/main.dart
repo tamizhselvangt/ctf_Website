@@ -30,24 +30,23 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'CTF-8',
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xff151515),
-        ),
-        iconButtonTheme: IconButtonThemeData(style: IconButton.styleFrom(
-          foregroundColor: Colors.white
-        )),
-        scaffoldBackgroundColor: Color(0xff1d1d1d),
-        primaryColor: Color(0xffbfe76a),
-        primaryTextTheme: const TextTheme(
-      displayMedium: TextStyle(
-        fontFamily: "Monaco",
-        fontSize: 40,
-        fontWeight: FontWeight.w400,
-        color: Color(0xffbfe76a),
-      ),
-        )
-      ),
+      // theme: ThemeData(
+      //   appBarTheme: const AppBarTheme(
+      //     backgroundColor: Color(0xff151515),
+      //   ),
+      //   iconButtonTheme: IconButtonThemeData(style: IconButton.styleFrom(
+      //     foregroundColor: Colors.white
+      //   )),
+      //   primaryColor: Color(0xffbfe76a),
+      //   primaryTextTheme: const TextTheme(
+      // displayMedium: TextStyle(
+      //   fontFamily: "Monaco",
+      //   fontSize: 40,
+      //   fontWeight: FontWeight.w400,
+      //   color: Color(0xffbfe76a),
+      // ),
+      //   )
+      // ),
       // home: ChallengePage(),
       home: WelcomePage(),
     );
