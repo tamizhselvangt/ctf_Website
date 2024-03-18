@@ -13,6 +13,17 @@ class ChallengePage extends StatelessWidget {
   Widget build(BuildContext context) {
     mobile = MediaQuery.of(context).size.width < 830 ? false : true;
     return Scaffold(
+      bottomNavigationBar: Container(
+        height: 50,
+        width: double.infinity,
+        color: Color(0xff151515),
+        child: Center(
+          child: Text("MyFoooter",
+          style: TextStyle(
+            color: Colors.white
+          ),),
+        ),
+      ),
       appBar: AppBar(
         title:  MediaQuery.of(context).size.width < 800 ? Text(
           "./hindustan college",
@@ -61,7 +72,8 @@ class ChallengePage extends StatelessWidget {
                       // color: Color(0xff1d1d1d),
                       child: Obx(() =>
                       sideBarController.pages[sideBarController.index.value]),
-                    ))
+                    )),
+
               ],
             );
            else
