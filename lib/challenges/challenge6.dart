@@ -105,37 +105,41 @@ class _Challenge5State extends State<Challenge6> {
                       onTap: () {
                         launchWebSiteURL('https://en.wikipedia.org/wiki/Meta_Platforms');
                       },
-                      child: HoverCrossFadeWidget(
-                        duration: Duration(milliseconds: 100),
-                        firstChild: Container(
-                          width: 200,
-                          height: 240,
-                          decoration: BoxDecoration(
-                              color: Color(0xff262626),
-                              borderRadius: BorderRadius.zero),
-                          child: Card(
-                              elevation: _elevation,
-                              child: Center(
-                                child: Image.asset("assets/images/phFile.png",
-                                  width: 50,
-                                  height: 80,),
-                              ),
-                              color: Color(0xff262626)),
-                        ),
-                        secondChild:Container(
-                          width: 220,
-                          height: 250,
-                          decoration: BoxDecoration(
-                              color: Color(0xff313131),
-                              borderRadius: BorderRadius.zero),
-                          child: Card(
-                              elevation: _elevation,
-                              child: Center(
-                                child: Image.asset("assets/images/phFile.png",
-                                  width: 60,
-                                  height: 90,),
-                              ),
-                              color: Color(0xff313131)),
+                      child: PhysicalModel(
+                        color: Color(0xff262626),
+                        elevation: 20.0,
+                        child: HoverCrossFadeWidget(
+                          duration: Duration(milliseconds: 100),
+                          firstChild: Container(
+                            width: 200,
+                            height: 240,
+                            decoration: BoxDecoration(
+                                color: Color(0xff262626),
+                                borderRadius: BorderRadius.zero),
+                            child: Card(
+                                elevation: _elevation,
+                                child: Center(
+                                  child: Image.asset("assets/images/phFile.png",
+                                    width: 50,
+                                    height: 80,),
+                                ),
+                                color: Color(0xff262626)),
+                          ),
+                          secondChild:Container(
+                            width: 220,
+                            height: 250,
+                            decoration: BoxDecoration(
+                                color: Color(0xff313131),
+                                borderRadius: BorderRadius.zero),
+                            child: Card(
+                                elevation: _elevation,
+                                child: Center(
+                                  child: Image.asset("assets/images/phFile.png",
+                                    width: 60,
+                                    height: 90,),
+                                ),
+                                color: Color(0xff313131)),
+                          ),
                         ),
                       ),
                     ),
